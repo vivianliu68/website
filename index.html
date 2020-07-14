@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Hotjar Tracking Code for https://vivianliu68.github.io/UX-UI_HW_19/ -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:1849801,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168986272-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168986272-1');
+</script>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vivian Home Page</title>
+  <link href="css/indexstyle.css" rel="stylesheet" type="text/css">
+  <script src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+  <style>
+   
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
+    
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1}
+    }
+    
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+    }
+    
+    /* The Close Button */
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .modal-header {
+      padding: 2px 16px;
+      background-color: #ACD4DD;
+      color: white;
+    }
+    
+    .modal-body {padding: 2px 16px;}
+    
+    .modal-footer {
+      padding: 2px 16px;
+      background-color: white;
+      color: white;
+    }
+    
+    </style>
+</head>
+
+<script>
+  $(document).ready(function(){
+    $(".hide").click(function(){
+      $(".p1").slideUp(1500);
+    });
+  });
+</script>
+
+<!-- <script>
+  $(document).ready(function(){
+    $(".show").click(function(){
+      $(".p1").slidedown(2000);
+    });
+  });
+</script> -->
+
+<body>
+
+<!-- Nav HTML -->
+<header>
+  <nav id="navBar">
+    <div id="logo"><a href="index.html"><img id="logo" src="images/mylogo.png" alt="my logo"></a>
+    </div>
+    <div id="navigation">
+      <p2><a href="index.html">HOME</a></p2>
+      <p2><a href="#work">WORK</a></p2>
+      <p2><a href="#aboutme">ABOUT</a></p2>
+      <p2><a href="#contact">CONTACT</a></p2>
+    </div>
+  </nav>
+  <hr class="new4">
+</header>
+<!-- 
+<div><a href="index.html"><img class="show upArrow" src="images/up-arrow.png" alt="up arrow"></a>
+</div> -->
+
+<!-- HERO HTML -->
+ 
+<section id="intro" class="p1"> 
+  <div class="heroGridArea">
+    <div id="hiViv">
+      <h2>Nice to Meet You!</h2>
+    </div>
+    <div id="about">
+      <h1>I am Vivian, a product designer with a passion for designing beautiful and functional UX/UI products for people.</h1>
+    </div>
+    <div id="vivPic">
+      <img src="images/Viv-aboutme.png" alt="About Vivian">
+    </div>
+    <div id="viewResume">
+      <button id="myBtn">VIEW RESUME</button>
+    </div>
+    <div id="downArrow">
+      <a href="#work"></a><img class="arrow bounce hide" src="images/pink-arrow.png" alt="down arrow"></a> 
+  </div>
+  </div>
+
+</section>
+
+<!-- CASE STYDY HTML -->
+<section id="caseStudy"> 
+  <div>
+    <div class="sectionHead"><a id="work"></a>
+  </div>
+  <div>
+    <h3>UX/UI CASE STUDIES</h3> 
+  </div>
+  <div>
+    <section id="casestudyGrid">
+ <!-- EPA -->
+      <div id="epa" class="casestudyGridArea container">
+        <div class="casestudyHeader">EPA
+        </div>
+        <div class="overlay text">
+          <div class="overlay-head">Governement Agency Website Redesign</div>
+          <a href="../EPA-casestudy.html"><button>VIEW PROJECT</button></a>
+        </div>
+      </div>
+<!-- Buzzle-->
+      <div id="buzzle" class="casestudyGridArea container">
+        <div class="casestudyHeader">Buzzle
+        </div>
+        <div class="overlay text">
+          <div class="overlay-head">Mobile Design<br>Medication Management App</div>
+          <div class="overlay-subhead"></div>
+          <!-- <div class="overlay-body">Developing an app with a family friendly focus that allows caregivers to manage medications with each other and gently remind patients to adhere to guidelines.
+          </div> -->
+          <button>VIEW PROJECT</button>
+        </div>
+      </div>
+
+<!-- EasyTrek-->
+      <div id="esytrek" class="casestudyGridArea container">
+        <div class="casestudyHeader">EasyTrek
+        </div>
+        <div class="overlay text">
+          <div class="overlay-head">Mobile Design<br>Travel App</div>
+          <!-- <div class="overlay-subhead"></div> -->
+          <!-- <div class="overlay-body">EasyTrek is designed to help travelers to hire a local tour export to take them for a more in-depth and immersive travel experiences.
+          </div> -->
+          <button>VIEW PROJECT</button>
+        </div>
+      </div>
+
+<!-- FeedOC-->
+      <div id="feedoc" class="casestudyGridArea container">
+        <div class="casestudyHeader">FeedOC 
+        </div>
+        <div class="overlay text">
+          <div class="overlay-head">Responsive Web Design<br>Non-Profit Organization</div>
+          <div class="overlay-subhead"></div>
+          <!-- <div class="overlay-body">Developing an app with a family friendly focus that allows caregivers to manage medications with each other and gently remind patients to adhere to guidelines.
+          </div> -->
+          <button>VIEW PROJECT</button>
+        </div>
+      </div>     
+      
+    </section>
+  </div> 
+</section>
+
+<!-- ABOUT ME HTML -->
+<section class="aboutMe"> 
+  <div>
+    <div class="sectionHead"><a id="aboutme"></a>
+    </div>
+    <div>
+      <h3>ABOUT ME</h3>
+    </div>
+    <div class="aboutContainer">
+      <div id="vivL"><img src="images/Viv-portrait3.png" alt="Vivian and HeiHei">
+      </div>
+      <div id="aboutText"><span>W</span><p>ith my background in graphics and packing design, I have a successful career in visual design. But after enrolling in UC Irvine’s UX/UI Design Boot Camp Program, I came to have a love for learning about User Centered Design and Process. With my design process, I have a solid foundational skills in problem solving towards creating user-friendly, and functional products. As a meticulous design enthusiast, I love playing with colors, typography, and imagery: and these are just few of my passions!<br><br>In my spare time, I enjoy cooking, pilates, and walking my four-legged doggy HeiHei.
+      </p>
+      </div>
+    </div>
+  </div>
+  
+ <!-- Skill section -->   
+  <div class="skillContainer">
+    <div class="flexItem" id="uxskill">
+      <h6>UX SKILLS</h6>
+      <p>Design&nbsp;Thinking<br>
+        User-Centric&nbsp;Design&nbsp;Research<br>
+        User&nbsp;Interface&nbsp;Development<br>
+        Persona&nbsp;Development<br>
+        Competitive&nbsp;Analysis<br>
+        Usability&nbsp;Testing<br>
+        User&nbsp;Flow<br>
+        Wireframing<br>
+        Storyboarding<br>
+      </p>
+    </div>
+    <div class="flexItem" id="uiskill">
+      <h6>UI SKILLS</h6>
+      <p>Visual&nbsp;Design<br>
+        UI&nbsp;Style&nbsp;Guide<br>
+        Design&nbsp;Direction<br>
+        Animation<br>
+        Prototyping<br>
+        Responsive&nbsp;Web&nbsp;Design<br>  
+      </p>
+    </div>
+    <div class="flexItem" id="tools">
+      <h6>TOOLS</h6>
+      <p>HTML<br>CSS<br>Bootstrap<br>Visual&nbsp;Studio&nbsp;Code<br>GitHub<br>Adobe XD<br>InVision<br>Photoshop<br>Figma
+      </p>   
+    </div>
+  </div>
+
+</sectin>
+
+<!-- CONTACT HTML -->
+<section>
+  <div class="sectionHead"><a id="contact"></a>
+  </div> 
+  <div class="contactBg">
+    <div class="block_element">
+      <div>
+        <h3><a id="contact">SAY HELLO!</a></h3> 
+        <hr style="width:80px;border:2px solid #97C8D3" class="w3-round">
+      </div>
+      <div>
+        <p>Feel free to contact me if you have any questions or just want to say Hello! 
+        </p>
+        <form>
+        <input type="text" placeholder="Your Name"></input>
+        <input type="text" placeholder="Your Email"></input>
+      
+        <input type="textarea" placeholder=""></input>
+        <input class="submit" type="submit" value="SEND MESSAGE"></input>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- The Modal -->
+  <div id="myModal" class="modal">
+
+<!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Resume coming soon</h2>
+      </div>
+      <div class="modal-body">
+        <p>Thanks for checking :)</p>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+<!-- Footer HTML -->
+<section class="footer"> 
+  <footer id="footerContent">
+      <div id="socialIcons"><img src="images/linkedin-circled-1.png"><img src="images/github-2.png"><img src="images/instagram-new-2.png">
+      </div>
+      <p class="p3">© 2020 Vivian Liu</p>
+      <div id="navigation">
+        <p2><a href="#casestydies">HOME</a></p2>
+        <p2><a href="#work.html">WORK</a></p2>
+        <p2><a href="#contact">ABOUT</a></p2>
+        <p2><a href="#resume">CONTACT</a></p2>
+      </div>
+<!--       
+      <div><a href="index.html"><img class="show upArrow" src="images/up-arrow.png" alt="up arrow"></a>
+      </div> -->
+
+  </footer="footerContent">
+</section>
+  <!-- <div class="preloader">
+    <img src="images/mylogo.png">
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/index.js"></script> -->
+
+  </body>
+</html>
+

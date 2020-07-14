@@ -1,0 +1,719 @@
+/* NAVI CSS */
+header {
+  position: sticky;
+  top: 0px;
+  background-color:rgba(255, 255, 255, 0.8);
+
+}
+/* mouse over link */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 4%;
+}
+
+#logo {
+  padding: 6px;
+  display: flex;
+  width: 60%;
+}
+
+#navigation {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Roboto';
+  color: #7AA2AD;
+  font-family: 'Roboto','Source Sans Pro';
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px; 
+  margin-left: 8px;
+}
+
+#navigation p {
+  cursor: pointer;
+}
+
+a:link {
+  color: #7AA2AD;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7AA2AD;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #856E71;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* selected link */
+a:active {
+  color: rgb(45, 27, 23);
+}
+
+/* Thick tan lines */
+hr.new4 {
+  border: 1px solid Linen;
+}
+
+
+/* HERO CSS */
+#intro {
+  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(252,238,231)); 
+  padding: 0 80px;
+}
+  
+.heroGridArea {  
+  max-width: 100%;
+  height: 100%;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 5% 55% 15% 25%;
+  grid-template-columns: 75% 25%;
+  grid-template-areas:
+  "hiViv hiViv"
+  "about vivPic"
+  "viewResume viewResume"
+  "downArrow downArrow";
+}
+
+#hiViv {
+  grid-area: hiViv;
+  float: left; 
+  margin-top: 10px;
+} 
+
+#about {
+  grid-area: about;
+  margin-top: 30px;
+} 
+
+#vivPic {
+  max-width: 80%;
+  grid-area: vivPic;
+  margin-top: 40px;
+  padding: 20 10 10 10 px;
+} 
+
+#downArrow {
+  grid-area: downArrow;
+  padding-bottom: 50px;
+  margin: -20px 50%;
+  align-items: center;
+}
+
+#viewResume{
+  grid-area: viewResume;
+  /* padding-bottom: 30px; */
+  float: left; 
+
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+  opacity: 50%;
+}
+
+.arrow:hover {
+  text-align: center;
+  margin: 8% 0;
+  opacity: 100%;
+}
+
+
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+.upArrow { 
+  opacity: 50%;
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+}
+
+.upArrow:hover { 
+  opacity: 100%;
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+}
+
+#intro button {
+  margin-top: 10px;
+  font-size: 8pt;
+  background-color: #E98F76;
+  border: 1px solid #E98F76;
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
+/* Empty Box for anchor link */
+.sectionHead {
+  width: 10px;
+	height: 50px;
+}
+
+/* Hero headline */
+h1 {
+  font-family: 'Playfair Display';
+  /* font-size:56px; */
+  font-size:4vw;
+  font-weight: 100;
+  letter-spacing: 2px; 
+  color: #619FB4;
+  word-wrap: keep-all;
+} 
+
+/* Hero sub-headline */
+h2 {
+  font-family: 'Playfair Display';
+  /* font-size: 38px; */
+  font-size:3vw;
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 1px; 
+  color:rgb(119, 98, 101);
+} 
+
+/* Section main header */
+h3 {
+  font-family: 'Playfair Display';
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 1px; 
+  text-align: center;
+  color:#856E71;
+  /* padding-top: 40px; */
+}
+
+h4 {
+  font-family:'Playfair Display';
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: 10;
+  line-height: 170%;
+  color:white;
+  /* text-align: top; */
+} 
+
+/* Case Study Card Sub Head */
+h5 {
+  font-family: 'Roboto','Source Sans Pro';
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1px; 
+  line-height: 22px;
+  text-align: top;
+  color: white;
+  position: absolute;
+  padding: 52px 38px;
+}
+
+/* Skill headline */
+h6 {
+  font-family: 'Playfair Display';
+  font-weight: 200;
+  font-size: 24px;
+  color: #619FB4;
+  letter-spacing: 1px;
+  margin: 1px 10px 10px 0px;
+}
+
+p {
+  font-family: 'Roboto','Source Sans Pro';
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px; 
+  color:rgb(72, 77, 77);
+  text-align: left;
+  line-height: 170%;
+} 
+
+section {
+  display: block;
+}
+
+.content {
+  width: 860px;
+  margin: 0 auto;
+  /* padding: 50px;
+  padding-top: 95px; */
+  text-align: center;
+}
+
+.content button {
+  margin-top: 10px;
+  font-size: 8pt;
+  background-color: #E98F76;
+  border: 1px solid #E98F76;
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
+
+.w3-round {
+  border-radius:16px;
+}
+
+.w3-row-padding,.w3-row-padding>.w3-half,.w3-row-padding>.w3-third,.w3-row-padding>.w3-twothird,.w3-row-padding>.w3-threequarter,.w3-row-padding>.w3-quarter,.w3-row-padding>.w3-col{padding:0 8px}
+
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+
+.w3-half img:hover{opacity:1}
+
+
+.upArrow { 
+  opacity: 50%;
+}
+
+
+/* Case Study Grids */ 
+#caseStudy {
+  background-color:#F8F7F4;
+}
+
+#casestudyGrid {
+  /* margin: 10px; */
+  display: grid;
+  padding: 0px 50px 0px 50px;
+  grid-template-rows: 460px 460px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "epa buzzle"
+  "esytrek feedoc";
+}
+
+.casestudyGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 40px;
+  cursor: pointer;
+  display: grid;
+  /* align-content: top; */
+  position: relative;
+}
+
+div.casestudyGridArea img {
+  width: 70%;
+  height: auto;
+  vertical-align: middle
+}
+
+.container {
+  position: relative;
+  display: flex;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  display: flex;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: space-between; */
+  justify-content: center;
+  height: 100%;
+  width: 101%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(116, 178, 197);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(29, 55, 72, 0.8); */
+}
+
+.overlay-head {
+  margin: 60px 24px 20px 24px;
+  font-family: 'Playfair Display';
+  font-weight: 200;
+  font-size: 26px;
+  line-height: 36px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.overlay-subhead {
+  margin: 10px 24px 20px 24px;
+  font-family: 'Roboto','Source Sans Pro';
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.overlay-body {
+  margin: 10px 55px 30px 55px;
+  font-family: 'Roboto','Source Sans Pro';
+  font-weight: 100;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+
+.text {
+  font-family: 'Roboto','Source Sans Pro';
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px; 
+  text-align: center;
+  line-height: 22px;
+  /* transform: translate(-50%, -50%); */
+}
+
+/* Case Study Card Main Head */
+.casestudyHeader {
+  background-color: rgba(29, 55, 72, 0.7);
+  font-family:'Playfair Display';
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 10;
+  padding: 10px 35px;
+  height: 46px;
+  color: white; border-left: 8px solid #7BC3D8;
+}
+
+#caseStudy button {
+  margin-top: 10px;
+  font-size: 8pt;
+  background-color: #E98F76;
+  border: 1px solid #E98F76;
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
+#caseStudy button:hover {
+  margin-top: 10px;
+  font-size: 8pt;
+  background-color: rgb(67, 49, 44);
+  border: 1px solid rgb(67, 49, 44);
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 80px;
+}
+
+/* .container:hover .overlay {
+  opacity: 1;
+  display: flex;
+} */
+
+#epa {
+  grid-area: epa;
+  background-image: url("../images/EPA-card2.png");
+}
+
+#buzzle {
+  grid-area: buzzle;
+  background-image: url("../images/buzzle-card.png");
+}
+
+#feedoc {
+  grid-area: feedoc;
+  background-image: url("../images/feedoc-card2.png");
+}
+
+#esytrek {
+  grid-area: esytrek;
+  background-image: url("../images/easytrek-card2.png");
+}
+
+/* About ME CSS */
+
+.aboutMe {
+  background: #F4E8E3 url("../images/aboutme-bg.png") no-repeat top;
+  max-width: 100%;
+}
+
+.aboutContainer {
+  display: inline-block;
+  /* width: 1000px; */
+  justify-content: space-around;
+  padding: 0px 120px 40px 120px;
+}
+
+#vivL {
+  width: 340px;
+}
+
+.aboutContainer img {
+  float: left;
+  padding: 1px 50px;
+  max-width: 80%;
+}
+
+.vivPic2{
+  float: center;
+  width:50%;
+}
+
+span {
+  float: left;
+  width: 1.1em;
+  font-size: 46px;
+  font-family: 'Playfair Display';
+  line-height: 110%;
+  color: #619FB4;
+}
+
+.skillContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.flexItem {
+  display: inline-block;
+  justify-content: center;
+} 
+  
+/*CONTACT  FORM*/
+
+.contactBg {
+  background-image: linear-gradient(to bottom, rgba(232,245,252,1), rgba(252,238,231,1));
+  width: 100%;
+}
+
+.block_element {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  align-content: flex-start;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid#7BC3D8;
+  border-radius: 5px;
+}
+
+input[type=submit]:hover {
+  background-color:#7BC3D8;
+  border:1px solid #7BC3D8;
+}
+
+input[type=textarea] {
+  width: 100%;
+  height: 120px;
+  padding: 12px 20px;
+  background-color:white;
+  resize: none;
+}
+
+.submit {
+  margin-top: 20px;
+  font-size: 8pt;
+  background-color: #E98F76;
+  border: 1px solid #E98F76;
+  width: 160px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  align-content: center;
+  margin-bottom: 140px;
+}
+
+/* FOOTER CSS */
+
+
+.footer {
+  background-color:#505050; 
+  padding: 18px; 
+  align-self: center;
+}
+
+#footerContent {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 4%;
+}
+
+.footer img {
+ width: 40px;
+ height: 40px;
+ padding: 10px;
+}
+
+#socialIcons {
+  margin-top: 4px;
+  display: flex;
+  width: 45%;
+}
+
+.p3 {
+  color:lightgrey;
+  font-size: 10pt;
+  box-align:right;
+  margin-top: 20px;
+  width: 15%;
+  font-family: 'Roboto','Source Sans Pro'!important;
+}
+
+
+.p2 {
+  font-size: 10pt;
+  align-items: center;
+  float: right;
+}
+
+
+
+
+/* .preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.preloader img {
+  animation: spin 3s ease;
+  transition: all;
+  width: 200px;
+  margin: 0 auto;
+} */
+
+/* .bounceMe {
+  animation: bounceArrow .7s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+
+@keyframes bounceArrow {
+  from {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 7px;
+  }
+  to {
+    margin-top: 0px;
+  }
+} */
+
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #intro {
+      position: static;
+      margin: 0px;
+      }
+
+    #heroGrid{
+      grid-template-rows:
+      300px 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "hiViv"
+      "about" 
+      "vivPic"
+      "viewResume"
+      "downArrow";
+    }
+  
+    #casestudyGrid {
+      grid-template-rows:
+      300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "epa"
+      "buzzle"
+      "feedoc"
+      "esytrek";
+      }
+
+      #aboutMe {
+        grid-template-rows:
+        300px 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "vivL"
+        "aboutText"
+        "uxskill"
+        "uiskill"
+        "tools";
+        }
+        
+
+        #contact {
+          grid-template-rows:
+          300px;
+          grid-template-columns: 1fr;
+          grid-template-areas:
+          "contact";
+          }
+  }
+
